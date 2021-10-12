@@ -1,0 +1,656 @@
+"2021-10-13 00:23:12 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1318)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:959)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+"2021-10-13 00:23:12 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1318)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:959)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+"2021-10-13 00:23:12 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1318)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:959)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+"2021-10-13 00:24:13 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: horizon-cluster-shard-00-01.eh18v.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: horizon-cluster-shard-00-01.eh18v.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 00:24:13 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: horizon-cluster-shard-00-00.eh18v.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: horizon-cluster-shard-00-00.eh18v.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 00:24:13 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: horizon-cluster-shard-00-02.eh18v.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: horizon-cluster-shard-00-02.eh18v.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 02:30:26 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: No such host is known (horizon-cluster-shard-00-00.eh18v.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: No such host is known (horizon-cluster-shard-00-00.eh18v.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 02:30:28 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: No such host is known (horizon-cluster-shard-00-01.eh18v.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: No such host is known (horizon-cluster-shard-00-01.eh18v.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 02:30:36 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: horizon-cluster-shard-00-00.eh18v.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: horizon-cluster-shard-00-00.eh18v.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 02:30:38 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: horizon-cluster-shard-00-01.eh18v.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: horizon-cluster-shard-00-01.eh18v.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:797)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 02:30:46 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: No such host is known (horizon-cluster-shard-00-00.eh18v.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: No such host is known (horizon-cluster-shard-00-00.eh18v.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 02:30:48 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+"com.mongodb.MongoSocketException: No such host is known (horizon-cluster-shard-00-01.eh18v.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.UnknownHostException: No such host is known (horizon-cluster-shard-00-01.eh18v.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:929)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1515)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:848)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1505)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1364)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1298)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+"2021-10-13 02:32:10 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1459, serverValue:30379}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 02:32:10 [cluster-rtt-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1460, serverValue:29764}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-13 02:32:10 [cluster-rtt-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1453, serverValue:30379}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 02:32:10 [cluster-rtt-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1461, serverValue:29630}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-13 02:32:10 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1456, serverValue:29764}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-13 02:32:10 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1458, serverValue:29630}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-13 02:32:12 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=32964861700, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000006c, setVersion=8, topologyVersion=TopologyVersion{processId=6163959469a1843c481a2a9c, counter=6}, lastWriteDate=Wed Oct 13 02:32:10 IST 2021, lastUpdateTimeNanos=478180329401400}
+""2021-10-13 02:32:12 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=38140570600, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=61639696b184f3ae049e58ae, counter=4}, lastWriteDate=Wed Oct 13 02:32:10 IST 2021, lastUpdateTimeNanos=478180329401400}
+""2021-10-13 02:32:12 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=38304547700, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6163949a79823de755986b36, counter=4}, lastWriteDate=Wed Oct 13 02:32:10 IST 2021, lastUpdateTimeNanos=478180407110600}
+""2021-10-13 02:32:12 [cluster-ClusterId{value='61657c5ba3aae61aae459041', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 02:43:56 [http-nio-8045-exec-4] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:7, serverValue:24087}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017 because there was a socket exception raised on another connection from this pool.
+""2021-10-13 02:44:02 [http-nio-8045-exec-4] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1462, serverValue:30443}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 02:54:43 [SpringApplicationShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:1462, serverValue:30443}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017 because the pool has been closed.
+""2021-10-13 03:13:11 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Starting HorizonCoreApplicationKt using Java 11.0.11 on fadednirvana with PID 33356 (E:\Horizon India\horizon-core\core\target\classes started by HP in E:\Horizon India\horizon-core\core)
+""2021-10-13 03:13:12 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - No active profile set, falling back to default profiles: default
+""2021-10-13 03:13:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-13 03:13:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-13 03:13:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-13 03:13:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""2021-10-13 03:13:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 1 MongoDB repository interfaces.
+""2021-10-13 03:13:13 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2d751c19' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-13 03:13:13 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-13 03:13:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8045 (http)
+""2021-10-13 03:13:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2021-10-13 03:13:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+""2021-10-13 03:13:14 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2021-10-13 03:13:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2596 ms
+""2021-10-13 03:13:21 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=horizon-cluster.eh18v.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-u432k0-shard-0'}
+""2021-10-13 03:13:21 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:13:21 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:13:21 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-02.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:13:22 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+""2021-10-13 03:13:23 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7996bbe1, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f913019, org.springframework.security.web.header.HeaderWriterFilter@342e779a, org.springframework.web.filter.CorsFilter@3a180cab, org.springframework.security.web.authentication.logout.LogoutFilter@2cecdf88, com.horizon.core.jwt.JwtAuthTokenFilter@608d63c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d18c78d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3af13e9e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@145c319c, org.springframework.security.web.session.SessionManagementFilter@36d5bc40, org.springframework.security.web.access.ExceptionTranslationFilter@738a6bce, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2097587d]
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:30111}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [cluster-rtt-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:30111}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:30654}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:29981}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [cluster-rtt-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:29981}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1010618200, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000006c, setVersion=8, topologyVersion=TopologyVersion{processId=6163959469a1843c481a2a9c, counter=6}, lastWriteDate=Wed Oct 13 03:13:23 IST 2021, lastUpdateTimeNanos=480652825971800}
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1011329400, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6163949a79823de755986b36, counter=4}, lastWriteDate=Wed Oct 13 03:13:23 IST 2021, lastUpdateTimeNanos=480652825980500}
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1013077400, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=61639696b184f3ae049e58ae, counter=4}, lastWriteDate=Wed Oct 13 03:13:23 IST 2021, lastUpdateTimeNanos=480652825984800}
+""2021-10-13 03:13:23 [cluster-rtt-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:30654}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000006c from replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [cluster-ClusterId{value='61660179fe9973576bbd8cfc', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:13:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8045 (http) with context path ''
+""2021-10-13 03:13:23 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Started HorizonCoreApplicationKt in 12.392 seconds (JVM running for 14.595)
+""2021-10-13 03:13:23 [restartedMain] INFO  c.h.core.HorizonCoreApplication - HorizonCore Application Started
+""2021-10-13 03:13:58 [http-nio-8045-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-10-13 03:13:58 [http-nio-8045-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2021-10-13 03:13:58 [http-nio-8045-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2021-10-13 03:13:58 [http-nio-8045-exec-1] ERROR com.horizon.core.jwt.JwtProvider - JWT claims string is empty -> Message: {}
+"java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.horizon.core.jwt.JwtProvider.validateJwtToken(JwtProvider.kt:30)
+	at com.horizon.core.jwt.JwtAuthTokenFilter.doFilterInternal(JwtAuthTokenFilter.kt:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+"2021-10-13 03:14:09 [http-nio-8045-exec-3] ERROR com.horizon.core.jwt.JwtProvider - JWT claims string is empty -> Message: {}
+"java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.horizon.core.jwt.JwtProvider.validateJwtToken(JwtProvider.kt:30)
+	at com.horizon.core.jwt.JwtAuthTokenFilter.doFilterInternal(JwtAuthTokenFilter.kt:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+"2021-10-13 03:14:12 [http-nio-8045-exec-3] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:30749}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:14:40 [http-nio-8045-exec-4] ERROR com.horizon.core.jwt.JwtProvider - JWT claims string is empty -> Message: {}
+"java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.horizon.core.jwt.JwtProvider.validateJwtToken(JwtProvider.kt:30)
+	at com.horizon.core.jwt.JwtAuthTokenFilter.doFilterInternal(JwtAuthTokenFilter.kt:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+"2021-10-13 03:18:43 [SpringApplicationShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:7, serverValue:30749}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017 because the pool has been closed.
+""2021-10-13 03:19:08 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Starting HorizonCoreApplicationKt using Java 11.0.11 on fadednirvana with PID 4680 (E:\Horizon India\horizon-core\core\target\classes started by HP in E:\Horizon India\horizon-core\core)
+""2021-10-13 03:19:08 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - No active profile set, falling back to default profiles: default
+""2021-10-13 03:19:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-13 03:19:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-13 03:19:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-13 03:19:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""2021-10-13 03:19:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 1 MongoDB repository interfaces.
+""2021-10-13 03:19:10 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@76c0af17' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-13 03:19:10 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-13 03:19:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8045 (http)
+""2021-10-13 03:19:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2021-10-13 03:19:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+""2021-10-13 03:19:10 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2021-10-13 03:19:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2526 ms
+""2021-10-13 03:19:17 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=horizon-cluster.eh18v.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-u432k0-shard-0'}
+""2021-10-13 03:19:17 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:19:17 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:19:17 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-02.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:19:18 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:30168}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [cluster-rtt-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:30784}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [cluster-rtt-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:30168}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:30042}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1034588900, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6163949a79823de755986b36, counter=4}, lastWriteDate=Wed Oct 13 03:19:19 IST 2021, lastUpdateTimeNanos=481008852325800}
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=796638700, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=61639696b184f3ae049e58ae, counter=4}, lastWriteDate=Wed Oct 13 03:19:19 IST 2021, lastUpdateTimeNanos=481008852325800}
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:30804}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1081689500, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000006c, setVersion=8, topologyVersion=TopologyVersion{processId=6163959469a1843c481a2a9c, counter=6}, lastWriteDate=Wed Oct 13 03:19:19 IST 2021, lastUpdateTimeNanos=481008898088800}
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000006c from replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [cluster-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ed36b66, org.springframework.security.web.context.SecurityContextPersistenceFilter@d1f8d2c, org.springframework.security.web.header.HeaderWriterFilter@21f02453, org.springframework.web.filter.CorsFilter@7bbc255a, org.springframework.security.web.authentication.logout.LogoutFilter@41d3bfe8, com.horizon.core.jwt.JwtAuthTokenFilter@70a50859, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b50f2ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d3bbd6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47fa7897, org.springframework.security.web.session.SessionManagementFilter@52bfb268, org.springframework.security.web.access.ExceptionTranslationFilter@2476a15f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@431daf64]
+""2021-10-13 03:19:19 [cluster-rtt-ClusterId{value='616602dd99572c026ca6c562', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:30042}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-13 03:19:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8045 (http) with context path ''
+""2021-10-13 03:19:19 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Started HorizonCoreApplicationKt in 12.276 seconds (JVM running for 14.031)
+""2021-10-13 03:19:19 [restartedMain] INFO  c.h.core.HorizonCoreApplication - HorizonCore Application Started
+""2021-10-13 03:19:25 [http-nio-8045-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-10-13 03:19:25 [http-nio-8045-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2021-10-13 03:19:25 [http-nio-8045-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+""2021-10-13 03:19:25 [http-nio-8045-exec-2] ERROR com.horizon.core.jwt.JwtProvider - JWT claims string is empty -> Message: {}
+"java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.horizon.core.jwt.JwtProvider.validateJwtToken(JwtProvider.kt:30)
+	at com.horizon.core.jwt.JwtAuthTokenFilter.doFilterInternal(JwtAuthTokenFilter.kt:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+"2021-10-13 03:19:28 [http-nio-8045-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:30792}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:20:39 [SpringApplicationShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:7, serverValue:30792}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017 because the pool has been closed.
+""2021-10-13 03:20:53 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Starting HorizonCoreApplicationKt using Java 11.0.11 on fadednirvana with PID 24180 (E:\Horizon India\horizon-core\core\target\classes started by HP in E:\Horizon India\horizon-core\core)
+""2021-10-13 03:20:53 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - No active profile set, falling back to default profiles: default
+""2021-10-13 03:20:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-13 03:20:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-13 03:20:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-13 03:20:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""2021-10-13 03:20:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 1 MongoDB repository interfaces.
+""2021-10-13 03:20:55 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@13d7024' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-13 03:20:55 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-13 03:20:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8045 (http)
+""2021-10-13 03:20:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2021-10-13 03:20:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+""2021-10-13 03:20:55 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2021-10-13 03:20:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2249 ms
+""2021-10-13 03:21:02 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=horizon-cluster.eh18v.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-u432k0-shard-0'}
+""2021-10-13 03:21:02 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:21:02 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:21:02 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-02.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-13 03:21:03 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+""2021-10-13 03:21:04 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5877bddf, org.springframework.security.web.context.SecurityContextPersistenceFilter@738a6bce, org.springframework.security.web.header.HeaderWriterFilter@5c7ad677, org.springframework.web.filter.CorsFilter@23abdbc5, org.springframework.security.web.authentication.logout.LogoutFilter@5def07f7, com.horizon.core.jwt.JwtAuthTokenFilter@498928b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1789ad91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e27930a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ea6d4e6, org.springframework.security.web.session.SessionManagementFilter@72b6d81d, org.springframework.security.web.access.ExceptionTranslationFilter@769344d4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b90bc79]
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:30051}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:30780}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1059678900, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000006c, setVersion=8, topologyVersion=TopologyVersion{processId=6163959469a1843c481a2a9c, counter=6}, lastWriteDate=Wed Oct 13 03:21:04 IST 2021, lastUpdateTimeNanos=481114075194000}
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1061775200, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=61639696b184f3ae049e58ae, counter=4}, lastWriteDate=Wed Oct 13 03:21:04 IST 2021, lastUpdateTimeNanos=481114075193700}
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000006c from replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-rtt-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:30051}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-rtt-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:30780}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:30199}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-rtt-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:30199}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-13 03:21:04 [cluster-ClusterId{value='61660346372502271eb82d3c', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1091630900, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6163949a79823de755986b36, counter=4}, lastWriteDate=Wed Oct 13 03:21:04 IST 2021, lastUpdateTimeNanos=481114105495400}
+""2021-10-13 03:21:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8045 (http) with context path ''
+""2021-10-13 03:21:04 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Started HorizonCoreApplicationKt in 12.039 seconds (JVM running for 14.309)
+""2021-10-13 03:21:04 [restartedMain] INFO  c.h.core.HorizonCoreApplication - HorizonCore Application Started
+""2021-10-13 03:21:10 [http-nio-8045-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2021-10-13 03:21:10 [http-nio-8045-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2021-10-13 03:21:10 [http-nio-8045-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+""2021-10-13 03:21:10 [http-nio-8045-exec-1] ERROR com.horizon.core.jwt.JwtProvider - JWT claims string is empty -> Message: {}
+"java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.horizon.core.jwt.JwtProvider.validateJwtToken(JwtProvider.kt:30)
+	at com.horizon.core.jwt.JwtAuthTokenFilter.doFilterInternal(JwtAuthTokenFilter.kt:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+"2021-10-13 03:21:12 [http-nio-8045-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:7, serverValue:30795}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+"

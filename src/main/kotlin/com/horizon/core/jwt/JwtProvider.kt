@@ -12,20 +12,20 @@ import java.util.*
 @Component
 class JwtProvider {
 
-    private val jwtSecret: String? = "horizonSecret"
+    private val jwtSecret: String = "horizonSecret"
 
     private val jwtExpiration = 86400
     fun generateJwtToken(authentication: Authentication): String {
-        val userPrincipal: UserPrincipal = authentication.getPrincipal() as UserPrincipal
+        val userPrincipal: UserPrincipal = authentication.principal as UserPrincipal
         return Jwts.builder()
-            .setSubject(userPrincipal.getUsername())
+            .setSubject(userPrincipal.username)
             .setIssuedAt(Date())
-            .setExpiration(Date(Date().getTime() + jwtExpiration * 1000))
+            .setExpiration(Date(Date().time + jwtExpiration * 1000))
             .signWith(SignatureAlgorithm.HS512, jwtSecret)
             .compact()
     }
 
-    fun validateJwtToken(authToken: String?): Boolean {
+    fun validateJwtToken(authToken: String): Boolean {
         try {
             Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(authToken)
             return true
@@ -47,7 +47,7 @@ class JwtProvider {
         return Jwts.parser()
             .setSigningKey(jwtSecret)
             .parseClaimsJws(token)
-            .getBody().getSubject()
+            .body.subject
     }
 
     companion object {

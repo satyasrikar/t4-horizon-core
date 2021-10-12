@@ -19,10 +19,9 @@ import javax.servlet.http.HttpServletResponse
 
 class JwtAuthTokenFilter : OncePerRequestFilter() {
     @Autowired
-    private val tokenProvider: JwtProvider? = null
-
+    lateinit var tokenProvider: JwtProvider
     @Autowired
-    private val userDetailsService: UserDetailsServiceImpl? = null
+    lateinit var userDetailsService: UserDetailsServiceImpl
 
 
     @Throws(ServletException::class, IOException::class)
@@ -33,9 +32,9 @@ class JwtAuthTokenFilter : OncePerRequestFilter() {
     ) {
         try {
             jwt = getJwt(request)
-            if (jwt != null && tokenProvider!!.validateJwtToken(jwt)) {
+            if (tokenProvider.validateJwtToken(jwt)) {
                 val username = tokenProvider.getUserNameFromJwtToken(jwt)
-                val userDetails: UserDetails = userDetailsService!!.loadUserByUsername(username)
+                val userDetails: UserDetails = userDetailsService.loadUserByUsername(username)
                 val authentication = UsernamePasswordAuthenticationToken(
                     userDetails, null, userDetails.authorities
                 )
@@ -43,21 +42,21 @@ class JwtAuthTokenFilter : OncePerRequestFilter() {
                 SecurityContextHolder.getContext().authentication = authentication
             }
         } catch (e: Exception) {
-            Companion.log.error("Can NOT set user authentication -> Message: {}", e)
+            log.error("Can NOT set user authentication -> Message: {}", e)
         }
         filterChain.doFilter(request, response)
     }
 
-    private fun getJwt(request: HttpServletRequest): String? {
+    private fun getJwt(request: HttpServletRequest): String {
         val authHeader = request.getHeader("Authorization")
         return if (authHeader != null && authHeader.startsWith("Bearer ")) {
             authHeader.replace("Bearer ", "")
-        } else null
+        } else ""
     }
 
     companion object {
         @JvmStatic
-        var jwt: String? = ""
+        var jwt = ""
         @JvmStatic
         private val log: Logger = LoggerFactory.getLogger(JwtAuthTokenFilter::class.java)
     }

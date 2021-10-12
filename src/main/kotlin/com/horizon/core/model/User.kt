@@ -7,39 +7,22 @@ import javax.persistence.Id
 
 @Entity
 @Document(collection = "user")
-class User {
+class User() {
 
     @Id
-    var id: String? = null
+    var id = ""
 
-    var fullName: String? = null
+    var fullName = ""
 
-    var organization: String? = null
+    var organization = ""
 
-    var username: String? = null
+    var username = ""
 
-    var mobile: String? = null
+    var mobile = ""
 
-    var password: String? = null
+    var password = ""
 
     var isAdmin = false
-
-    constructor() {
-    }
-
-    constructor(
-        id: String?, fullName: String?, organization: String?, username: String?, mobile: String?, password: String?,
-        isAdmin: Boolean
-    ) {
-
-        this.id = id
-        this.fullName = fullName
-        this.organization = organization
-        this.username = username
-        this.mobile = mobile
-        this.password = password
-        this.isAdmin = isAdmin
-    }
 
 
 }

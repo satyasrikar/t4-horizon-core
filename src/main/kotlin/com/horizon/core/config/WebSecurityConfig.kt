@@ -18,16 +18,15 @@ import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 import org.springframework.web.client.RestTemplate
 
-
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-open class WebSecurityConfig : WebSecurityConfigurerAdapter() {
+class WebSecurityConfig : WebSecurityConfigurerAdapter() {
     @Autowired
-    var userDetailsService: UserDetailsServiceImpl? = null
+    lateinit var userDetailsService: UserDetailsServiceImpl
 
     @Autowired
-    private val unauthorizedHandler: JwtAuthEntryPoint? = null
+    lateinit var unauthorizedHandler: JwtAuthEntryPoint
     @Bean
     fun authenticationJwtTokenFilter(): JwtAuthTokenFilter {
         return JwtAuthTokenFilter()
@@ -36,7 +35,7 @@ open class WebSecurityConfig : WebSecurityConfigurerAdapter() {
     @Throws(Exception::class)
     override fun configure(authenticationManagerBuilder: AuthenticationManagerBuilder) {
         authenticationManagerBuilder
-            .userDetailsService<UserDetailsServiceImpl>(userDetailsService)
+            .userDetailsService(userDetailsService)
             .passwordEncoder(passwordEncoder())
     }
 
@@ -47,17 +46,17 @@ open class WebSecurityConfig : WebSecurityConfigurerAdapter() {
     }
 
     @Bean
-    open fun passwordEncoder(): PasswordEncoder {
+    fun passwordEncoder(): PasswordEncoder {
         return BCryptPasswordEncoder()
     }
 
     @Bean
-    open fun restTemplate(): RestTemplate {
+    fun restTemplate(): RestTemplate {
         return RestTemplate()
     }
 
     @Throws(Exception::class)
-    protected override fun configure(http: HttpSecurity) {
+    override fun configure(http: HttpSecurity) {
         http.cors().and().csrf().disable().authorizeRequests()
             .antMatchers("/api/auth/**").permitAll()
             .anyRequest().authenticated()

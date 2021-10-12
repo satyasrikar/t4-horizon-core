@@ -13,14 +13,12 @@ import javax.transaction.Transactional
 @Service
 class UserDetailsServiceImpl : UserDetailsService {
     @Autowired
-    var userRepository: UserRepository? = null
+    lateinit var userRepository: UserRepository
 
     @Transactional
     @Throws(UsernameNotFoundException::class)
     override fun loadUserByUsername(username: String): UserDetails {
-        val user: User? = userRepository!!.findByUsername(username)
-            ?.orElseThrow { UsernameNotFoundException("User Not Found with -> username or email : $username") }
-
+        val user: User = userRepository.findByUsername(username)
         return UserPrincipal.build(user)
     }
 }

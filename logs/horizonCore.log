@@ -34,4 +34,163 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 ""2021-10-12 16:17:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8045 (http) with context path ''
 ""2021-10-12 16:17:01 [main] INFO  c.h.core.HorizonCoreApplicationKt - Started HorizonCoreApplicationKt in 2.433 seconds (JVM running for 3.811)
 ""2021-10-12 16:17:01 [main] INFO  c.h.core.HorizonCoreApplication - HorizonCore Application Started
+""2021-10-12 16:52:09 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Starting HorizonCoreApplicationKt using Java 11.0.11 on fadednirvana with PID 16632 (E:\Horizon India\horizon-core\core\target\classes started by HP in E:\Horizon India\horizon-core\core)
+""2021-10-12 16:52:09 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - No active profile set, falling back to default profiles: default
+""2021-10-12 16:52:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-12 16:52:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-12 16:52:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:52:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2021-10-12 16:52:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+""2021-10-12 16:52:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:52:11 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""2021-10-12 16:52:11 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'userRepository': There is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.horizon.core.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] bound.
+""2021-10-12 16:52:11 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2021-10-12 16:52:11 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository', defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in com.horizon.core.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+""2021-10-12 16:54:27 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Starting HorizonCoreApplicationKt using Java 11.0.11 on fadednirvana with PID 776 (E:\Horizon India\horizon-core\core\target\classes started by HP in E:\Horizon India\horizon-core\core)
+""2021-10-12 16:54:29 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - No active profile set, falling back to default profiles: default
+""2021-10-12 16:54:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-12 16:54:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-12 16:54:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:54:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2021-10-12 16:54:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+""2021-10-12 16:54:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:54:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""2021-10-12 16:54:30 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'userRepository': There is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.horizon.core.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] bound.
+""2021-10-12 16:54:30 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2021-10-12 16:54:30 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository', defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in com.horizon.core.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+""2021-10-12 16:55:33 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Starting HorizonCoreApplicationKt using Java 11.0.11 on fadednirvana with PID 22316 (E:\Horizon India\horizon-core\core\target\classes started by HP in E:\Horizon India\horizon-core\core)
+""2021-10-12 16:55:33 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - No active profile set, falling back to default profiles: default
+""2021-10-12 16:55:33 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-12 16:55:33 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-12 16:55:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:55:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2021-10-12 16:55:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interfaces.
+""2021-10-12 16:55:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:55:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""2021-10-12 16:55:34 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userRepository' defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Cannot register bean definition [Root bean: class [org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration] for bean 'userRepository': There is already [Root bean: class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in com.horizon.core.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration] bound.
+""2021-10-12 16:55:34 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2021-10-12 16:55:34 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userRepository', defined in com.horizon.core.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration, could not be registered. A bean with that name has already been defined in com.horizon.core.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+""2021-10-12 16:56:08 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Starting HorizonCoreApplicationKt using Java 11.0.11 on fadednirvana with PID 10208 (E:\Horizon India\horizon-core\core\target\classes started by HP in E:\Horizon India\horizon-core\core)
+""2021-10-12 16:56:08 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - No active profile set, falling back to default profiles: default
+""2021-10-12 16:56:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-12 16:56:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-12 16:56:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:56:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2021-10-12 16:56:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+""2021-10-12 16:56:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:56:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""2021-10-12 16:56:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 MongoDB repository interfaces.
+""2021-10-12 16:56:10 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5290a3bd' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-12 16:56:10 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-12 16:56:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8045 (http)
+""2021-10-12 16:56:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2021-10-12 16:56:12 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+""2021-10-12 16:56:12 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2021-10-12 16:56:12 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3736 ms
+""2021-10-12 16:56:12 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2021-10-12 16:56:12 [restartedMain] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through method 'setContentNegotationStrategy' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'openEntityManagerInViewInterceptorConfigurer' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration$JpaWebConfiguration.class]: Unsatisfied dependency expressed through method 'openEntityManagerInViewInterceptorConfigurer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'openEntityManagerInViewInterceptor' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration$JpaWebConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+""2021-10-12 16:56:12 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+""2021-10-12 16:56:12 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+""2021-10-12 16:56:12 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2021-10-12 16:56:12 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+""2021-10-12 16:57:54 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Starting HorizonCoreApplicationKt using Java 11.0.11 on fadednirvana with PID 23100 (E:\Horizon India\horizon-core\core\target\classes started by HP in E:\Horizon India\horizon-core\core)
+""2021-10-12 16:57:54 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - No active profile set, falling back to default profiles: default
+""2021-10-12 16:57:54 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""2021-10-12 16:57:54 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""2021-10-12 16:57:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+""2021-10-12 16:57:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""2021-10-12 16:57:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 1 MongoDB repository interfaces.
+""2021-10-12 16:57:56 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@19f22ac8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-12 16:57:56 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2021-10-12 16:57:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8045 (http)
+""2021-10-12 16:57:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2021-10-12 16:57:56 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.53]
+""2021-10-12 16:57:56 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2021-10-12 16:57:56 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1988 ms
+""2021-10-12 16:58:02 [restartedMain] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=horizon-cluster.eh18v.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-u432k0-shard-0'}
+""2021-10-12 16:58:02 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-00.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-12 16:58:03 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-01.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-12 16:58:03 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-srv-horizon-cluster.eh18v.mongodb.net] INFO  org.mongodb.driver.cluster - Adding discovered server horizon-cluster-shard-00-02.eh18v.mongodb.net:27017 to client view of cluster
+""2021-10-12 16:58:03 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+""2021-10-12 16:58:04 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@641c686, org.springframework.security.web.context.SecurityContextPersistenceFilter@787789d5, org.springframework.security.web.header.HeaderWriterFilter@67cf98f7, org.springframework.web.filter.CorsFilter@37bbe19a, org.springframework.security.web.authentication.logout.LogoutFilter@7e60047c, com.horizon.core.jwt.JwtAuthTokenFilter@7ef636d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e70f27e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50679384, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44d92c89, org.springframework.security.web.session.SessionManagementFilter@5f9dae57, org.springframework.security.web.access.ExceptionTranslationFilter@31032346, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@440e5ac1]
+""2021-10-12 16:58:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8045 (http) with context path ''
+""2021-10-12 16:58:05 [restartedMain] INFO  c.h.core.HorizonCoreApplicationKt - Started HorizonCoreApplicationKt in 11.098 seconds (JVM running for 12.642)
+""2021-10-12 16:58:05 [restartedMain] INFO  c.h.core.HorizonCoreApplication - HorizonCore Application Started
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:4, serverValue:22918}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:23485}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=760668200, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-01.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=61639696b184f3ae049e58ae, counter=4}, lastWriteDate=Tue Oct 12 16:58:09 IST 2021, lastUpdateTimeNanos=443743496779000}
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=767474300, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000006c, setVersion=8, topologyVersion=TopologyVersion{processId=6163959469a1843c481a2a9c, counter=6}, lastWriteDate=Tue Oct 12 16:58:09 IST 2021, lastUpdateTimeNanos=443743496779300}
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max election id to 7fffffff000000000000006c from replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Setting max set version to 8 from replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:23048}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-12 16:58:05 [cluster-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1237802600, setName='atlas-u432k0-shard-0', canonicalAddress=horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, hosts=[horizon-cluster-shard-00-00.eh18v.mongodb.net:27017, horizon-cluster-shard-00-02.eh18v.mongodb.net:27017, horizon-cluster-shard-00-01.eh18v.mongodb.net:27017], passives=[], arbiters=[], primary='horizon-cluster-shard-00-02.eh18v.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='US_EAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=8, topologyVersion=TopologyVersion{processId=6163949a79823de755986b36, counter=4}, lastWriteDate=Tue Oct 12 16:58:09 IST 2021, lastUpdateTimeNanos=443743778444400}
+""2021-10-12 16:58:05 [cluster-rtt-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-00.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:23048}] to horizon-cluster-shard-00-00.eh18v.mongodb.net:27017
+""2021-10-12 16:58:06 [cluster-rtt-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-01.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:5, serverValue:22913}] to horizon-cluster-shard-00-01.eh18v.mongodb.net:27017
+""2021-10-12 16:58:06 [cluster-rtt-ClusterId{value='616571425bf39707313c136e', description='null'}-horizon-cluster-shard-00-02.eh18v.mongodb.net:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:23502}] to horizon-cluster-shard-00-02.eh18v.mongodb.net:27017
 "

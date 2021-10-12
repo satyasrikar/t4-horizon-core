@@ -4,6 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import io.swagger.v3.oas.annotations.OpenAPIDefinition
 import io.swagger.v3.oas.annotations.info.Info
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
 @SpringBootApplication
 @OpenAPIDefinition(
@@ -14,7 +16,9 @@ import io.swagger.v3.oas.annotations.info.Info
 	)
 )
 class HorizonCoreApplication
+var log: Logger = LoggerFactory.getLogger(HorizonCoreApplication::class.java)
 
 fun main(args: Array<String>) {
 	runApplication<HorizonCoreApplication>(*args)
+	log.info("HorizonCore Application Started")
 }

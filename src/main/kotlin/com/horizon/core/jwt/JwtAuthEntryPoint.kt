@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse
 
 @Component
 class JwtAuthEntryPoint : AuthenticationEntryPoint {
+
     private val log: Logger = LoggerFactory.getLogger(JwtAuthEntryPoint::class.java)
 
     @Throws(IOException::class, ServletException::class)
@@ -21,7 +22,7 @@ class JwtAuthEntryPoint : AuthenticationEntryPoint {
         response: HttpServletResponse,
         e: AuthenticationException
     ) {
-        log.error("Unauthorized error. Message - {}", e.message)
+        log.error("Authorization Error | Msg - {}", e.message)
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Error -> Unauthorized")
     }
 

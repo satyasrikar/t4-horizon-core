@@ -2,21 +2,21 @@ package com.horizon.core.response
 
 
 class JwtResponse {
-    var id: String? = null
-    var fullName: String? = null
-    var organization: String? = null
-    var username: String? = null
-    var mobile: String? = null
-    var isAdmin = false
-    var token: String? = null
+    var id: String = ""
+    var fullName = ""
+    var organization = ""
+    var username = ""
+    var mobile = ""
+    var isAdmin: Boolean = false
+    var token = ""
     var type = "Bearer"
 
     constructor() : super() {
     }
 
     constructor(
-        id: String?, fullName: String?, organization: String?, username: String?,
-        mobile: String?, isAdmin: Boolean, token: String?, type: String
+        id: String, fullName: String, organization: String, username: String,
+        mobile: String, isAdmin: Boolean, token: String, type: String
     ) : super() {
         this.id = id
         this.fullName = fullName
@@ -28,7 +28,7 @@ class JwtResponse {
         this.type = type
     }
 
-    constructor(id: String?, fullName: String?, username: String?, token: String?) : super() {
+    constructor(id: String, fullName: String, username: String, token: String) : super() {
         this.id = id
         this.fullName = fullName
         this.username = username

@@ -44,26 +44,28 @@ class UserPrincipal(
         return true
     }
 
-    override fun equals(o: Any?): Boolean {
-        if (this === o) return true
-        if (o == null || javaClass != o.javaClass) return false
-        val user = o as UserPrincipal
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other == null || javaClass != other.javaClass) return false
+        val user = other as UserPrincipal
         return Objects.equals(id, user.id)
+    }
+
+    override fun hashCode(): Int {
+        var result = id.hashCode()
+        result = 31 * result + name.hashCode()
+        result = 31 * result + username.hashCode()
+        result = 31 * result + password.hashCode()
+        result = 31 * result + (authorities?.hashCode() ?: 0)
+        return result
     }
 
 
     companion object {
         private const val serialVersionUID = 1L
         @JvmStatic
-        fun build(user: User?): UserPrincipal {
-            return UserPrincipal(
-                user?.id.toString(),
-                user?.fullName.toString(),
-                user?.username.toString(),
-                user?.password.toString()
-
-
-            )
+        fun build(user: User): UserPrincipal {
+            return UserPrincipal(user.id, user.fullName, user.username, user.password)
         }
     }
 }

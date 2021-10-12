@@ -61,9 +61,4 @@ class AuthRestController {
         )
     }
 
-
-    @GetMapping("/policyholders")
-    fun getallclients(): MutableList<User?> {
-        return accessService!!.getAllDetails();
-    }
 }

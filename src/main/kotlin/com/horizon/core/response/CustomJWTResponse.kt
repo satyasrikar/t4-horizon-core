@@ -5,4 +5,5 @@ class CustomJWTResponse {
     var username = ""
     var token = ""
     var type = "Bearer"
+    var name = ""
 }

@@ -55,6 +55,7 @@ class AuthRestController {
         customResponse.type = "Bearer"
         customResponse.token = jwt
         customResponse.username = userData.username
+        customResponse.name = userData.fullName
         
         return ResponseEntity.ok(
             customResponse
